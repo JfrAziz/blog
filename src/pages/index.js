@@ -1,24 +1,35 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import Layout from "../components/Layout"
+import PostItem from "../components/PostItem"
+import "./index.css"
 
-import SEO from "../components/seo"
-
-const IndexPage = ({data}) => {
+const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   return (
-    <div>
-      <SEO title="Home" />
-      {
-        edges.map((edge)=>{
-          const {frontmatter} = edge.node
+    <Layout width="1200px">
+      <div id="blog-title">
+        <h1>Jafar Aziz's Blog</h1>
+        <h3>An ordinary blogger, programer, and self learner</h3>
+      </div>
+      <div id="all-post-container">
+        {edges.map(edge => {
+          const { frontmatter } = edge.node
+          const { slug, title, excerpt, tags, tumbnail } = frontmatter
+          let tumbnailFluid = tumbnail.childImageSharp.fluid
           return (
-            <div key={frontmatter.slug}>
-              <Link to={frontmatter.slug}>{frontmatter.title}</Link>
-            </div>
+            <PostItem
+              key={slug}
+              slug={slug}
+              title={title}
+              excerpt={excerpt}
+              tags={tags}
+              image={tumbnailFluid}
+            />
           )
-        })
-      }
-    </div>
+        })}
+      </div>
+    </Layout>
   )
 }
 
@@ -32,8 +43,16 @@ const query = graphql`
           frontmatter {
             title
             slug
-            date
+            date(formatString: "MMMM DD, YYYY")
             excerpt
+            tags
+            tumbnail {
+              childImageSharp {
+                fluid(maxWidth: 360, maxHeight: 200) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
@@ -41,5 +60,5 @@ const query = graphql`
   }
 `
 
-export default IndexPage
+export default Index
 export { query }

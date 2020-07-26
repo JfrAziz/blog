@@ -1,42 +1,33 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import Logo from "../images/Logo"
+import { Link } from "gatsby"
+import { FISearch, FIX } from "../icons/Icon"
+import "./header.css"
+import { useState } from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+const Header = () => {
+  const [search, setSearch] = useState("")
+  return (
+    <header>
+      <div id="header-container">
+        <div id="logo-container">
+          <Link to={"/"}>
+            <Logo height={30}/>
+          </Link>
+        </div>
+        <div id="search-container">
+          <div id="search-wrapper">
+            <FISearch/>
+            <input type="text" placeholder="Search..." onChange={(e)=>setSearch(e.target.value)} value={search}/>
+            <div id="reset-search" onClick={()=>setSearch("")}>
+              <FIX/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

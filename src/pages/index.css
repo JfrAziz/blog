@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Raleway&Lato:wght@700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6f7;
+}
+
+a,  a:visited {
+  text-decoration: none;
+  color:  #222;
+}
+
+#all-post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+}
+
+#blog-title {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+#blog-title h1 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  color: #3b3b3b;
+  letter-spacing: 0.075rem;
+}
+
+#blog-title h3 {
+  all: unset;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #4b4b4b;
+}

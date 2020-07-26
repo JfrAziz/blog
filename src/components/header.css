@@ -1,0 +1,45 @@
+header {
+  background-color: #fafafa;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 4px 10px #5c5d6013;
+}
+
+#header-container {
+  max-width: 960px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ #logo-container a, #reset-search {
+  display: flex;
+  cursor: pointer;
+}
+
+#search-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  border: 1px solid #d6d6d6;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border-radius: 20px;
+  color: #3b3b3b;
+}
+
+#search-wrapper input {
+  border: none;
+  outline: none;
+  padding: 7.5px 10px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9rem;
+  
+}
