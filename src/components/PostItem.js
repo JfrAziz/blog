@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Img from "gatsby-image"
-import "./postItem.css"
+import "./postItem.scss"
 
-const PostItem = ({ slug, title, excerpt, tags = [], image }) => (
+const PostItem = ({ slug, title, excerpt, image, category, readTime }) => (
   <div className="post-item">
     <Link to={slug}>
       <div className="post-tumbnail">
@@ -14,10 +14,9 @@ const PostItem = ({ slug, title, excerpt, tags = [], image }) => (
           <div className="title">{title}</div>
           <div className="excerpt">{excerpt}</div>
         </div>
-        <div className="tags-contaiener">
-          {
-            tags.map((item, index) => <span className="tags" key={index}>#{item}</span>)
-          }
+        <div className="post-category" >
+          <a href="#" onClick={(e)=>e.stopPropagation()}>{category}</a>
+          <span>{readTime}</span>
         </div>
       </div>
     </Link>

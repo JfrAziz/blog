@@ -1,12 +1,9 @@
 import React from "react"
 import Logo from "../images/Logo"
 import { Link } from "gatsby"
-import { FISearch, FIX } from "../icons/Icon"
-import "./header.css"
-import { useState } from "react"
+import "./header.scss"
 
-const Header = () => {
-  const [search, setSearch] = useState("")
+const Header = ({showTitle = false}) => {
   return (
     <header>
       <div id="header-container">
@@ -14,15 +11,13 @@ const Header = () => {
           <Link to={"/"}>
             <Logo height={30}/>
           </Link>
-        </div>
-        <div id="search-container">
-          <div id="search-wrapper">
-            <FISearch/>
-            <input type="text" placeholder="Search..." onChange={(e)=>setSearch(e.target.value)} value={search}/>
-            <div id="reset-search" onClick={()=>setSearch("")}>
-              <FIX/>
-            </div>
-          </div>
+          {
+            showTitle && (
+              <div id="logo-text">
+                Jafar Aziz
+              </div>
+            )
+          }
         </div>
       </div>
     </header>

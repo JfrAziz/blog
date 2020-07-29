@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Raleway&Lato:wght@700&display=swap');
 
+* {
+  scrollbar-width: thin;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+}
+
 body {
   margin: 0;
   padding: 0;

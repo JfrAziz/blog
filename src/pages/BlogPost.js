@@ -2,16 +2,22 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Img from "gatsby-image"
-import "./blogPost.css"
+import "./blogPost.scss"
+import "./markdownTheme.scss"
+import SEO from "../components/seo"
 
 const BlogPost = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
   return (
-    <Layout>
+    <Layout showTitle={true}>
+      <SEO title = {frontmatter.title}/>
       <div className="blog-post-container">
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
-          <span>{frontmatter.date}</span>
+          <div className="subtitle">
+            <span className="subtitle-item category"><a href="#">{frontmatter.category}</a></span>
+            <span className="subtitle-item date">{frontmatter.date}</span>
+          </div>
           <div className="image-tumbnail">
             <Img fluid={frontmatter.tumbnail.childImageSharp.fluid}/>
           </div>
@@ -33,6 +39,7 @@ const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        category
         tumbnail {
           childImageSharp {
             fluid(maxWidth: 750) {

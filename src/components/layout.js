@@ -1,11 +1,11 @@
 import React from "react"
 import Header from "./Header"
-import "./layout.css"
+import "./layout.scss"
 
-const Layout = ({ children, width = "750px" }) => {
+const Layout = ({ children, width = "750px", showTitle = false }) => {
   return (
     <>
-      <Header />
+      <Header showTitle={showTitle} />
       <main>
         <div id="main-container" style={{maxWidth: width}}>
           {children}
