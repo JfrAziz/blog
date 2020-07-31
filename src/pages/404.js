@@ -1,12 +1,15 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "./404.scss"
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout showTitle={true}>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
+    <div id="not-found-container">
+      <h1>404</h1>
+      <h1>NOT FOUND</h1>
+    </div>
   </Layout>
 )
 

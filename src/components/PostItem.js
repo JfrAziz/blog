@@ -1,11 +1,11 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react"
+import { Link } from "gatsby"
 import Img from "gatsby-image"
 import "./postItem.scss"
 
 const PostItem = ({ slug, title, excerpt, image, category, readTime }) => (
   <div className="post-item">
-    <Link to={slug}>
+    <Link to={`/post/${slug}`}>
       <div className="post-tumbnail">
         <Img fluid={image} />
       </div>
@@ -14,14 +14,13 @@ const PostItem = ({ slug, title, excerpt, image, category, readTime }) => (
           <div className="title">{title}</div>
           <div className="excerpt">{excerpt}</div>
         </div>
-        <div className="post-category" >
-          <a href="#" onClick={(e)=>e.stopPropagation()}>{category}</a>
+        <div className="post-category">
+          <Link to={`/category/${category}`}>{category}</Link>
           <span>{readTime}</span>
         </div>
       </div>
     </Link>
   </div>
-
 )
 
 export default PostItem

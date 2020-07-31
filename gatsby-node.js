@@ -1,13 +1,10 @@
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = require.resolve(`./src/pages/BlogPost.js`)
-
-  const result = await graphql(`
+  const post = await graphql(`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
       ) {
         edges {
           node {
@@ -20,13 +17,36 @@ exports.createPages = async ({ actions, graphql }) => {
     }
   `)
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  post.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.slug,
-      component: blogPostTemplate,
+      path: `/post/${node.frontmatter.slug}`,
+      component: require.resolve(`./src/templates/BlogPost.js`),
       context: {
         slug: node.frontmatter.slug,
       },
     })
   })
+
+
+  const category = await graphql(`
+    {
+      allMarkdownRemark {
+        group(field: frontmatter___category) {
+          fieldValue
+        }
+      }
+    }
+  `)
+
+  category.data.allMarkdownRemark.group.forEach(({fieldValue})=> {
+    createPage({
+      path: `/category/${fieldValue}`,
+      component: require.resolve(`./src/templates/Category.js`),
+      context: {
+        category: fieldValue,
+      },
+    })
+  })
+
+  
 }

@@ -1,19 +1,18 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
 import Layout from "../components/Layout"
 import PostItem from "../components/PostItem"
 import SEO from "../components/seo"
-import "./index.scss"
-import "../templates/postList.scss"
+import "./postList.scss"
 
-const Index = ({ data }) => {
+
+const Category = ({ data, pageContext }) => {
   const { edges } = data.allMarkdownRemark
+  const { category } = pageContext
   return (
     <Layout width="1200px">
-      <SEO title="Home"/>
-      <div id="blog-title">
-        <h1>Jafar Aziz's Blog</h1>
-        <h3>An ordinary blogger, programer, and self learner</h3>
+      <SEO title={category} />
+      <div id="category-title">
+        <h3>{category}</h3>
       </div>
       <div id="all-post-container">
         {edges.map(edge => {
@@ -39,9 +38,8 @@ const Index = ({ data }) => {
 }
 
 const query = graphql`
-  query HomePageQuery {
-    allMarkdownRemark {
-      totalCount
+  query($category: String) {
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: $category}}}) {
       edges {
         node {
           id
@@ -67,8 +65,8 @@ const query = graphql`
         }
       }
     }
-  }
+  }  
 `
 
-export default Index
+export default Category
 export { query }

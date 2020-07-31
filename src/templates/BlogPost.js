@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 import Img from "gatsby-image"
 import "./blogPost.scss"
@@ -10,16 +10,18 @@ const BlogPost = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
   return (
     <Layout showTitle={true}>
-      <SEO title = {frontmatter.title}/>
+      <SEO title={frontmatter.title} />
       <div className="blog-post-container">
         <div className="blog-post">
           <h1>{frontmatter.title}</h1>
           <div className="subtitle">
-            <span className="subtitle-item category"><a href="#">{frontmatter.category}</a></span>
+            <span className="subtitle-item category">
+              <Link to={`/category/${frontmatter.category}`}>{frontmatter.category}</Link>
+            </span>
             <span className="subtitle-item date">{frontmatter.date}</span>
           </div>
           <div className="image-tumbnail">
-            <Img fluid={frontmatter.tumbnail.childImageSharp.fluid}/>
+            <Img fluid={frontmatter.tumbnail.childImageSharp.fluid} />
           </div>
           <div
             className="blog-post-content"
