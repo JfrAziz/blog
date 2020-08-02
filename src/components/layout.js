@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "./Header"
 import "./layout.scss"
+import Footer from "./Footer"
 
 const Layout = ({ children, width = "750px", showTitle = false }) => {
   return (
@@ -11,6 +12,7 @@ const Layout = ({ children, width = "750px", showTitle = false }) => {
           {children}
         </div>
       </main>
+      <Footer/>
     </>
   )
 }

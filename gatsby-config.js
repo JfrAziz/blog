@@ -7,17 +7,24 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           `gatsby-remark-reading-time`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 730,
+              height: 400
+            }
+          },
+          "gatsby-remark-responsive-iframe"
         ],
       },
     },

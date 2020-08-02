@@ -10,7 +10,7 @@ const Category = ({ data, pageContext }) => {
   const { category } = pageContext
   return (
     <Layout width="1200px">
-      <SEO title={category} />
+      <SEO title={`Category "${category}"`} />
       <div id="category-title">
         <h3>{category}</h3>
       </div>

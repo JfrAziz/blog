@@ -33,3 +33,9 @@
 .image-tumbnail {
   padding: 20px 0;
 }
+
+@media screen and (max-width: 750px) {
+  .blog-post {
+    padding: 20px;
+  }
+}
