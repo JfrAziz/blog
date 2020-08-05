@@ -23,7 +23,7 @@ const Footer = () => {
       <div id="footer-container">
         <div id="footer-left">
           <div id="footer-logo">
-            <Logo height={30}/>
+            <Logo height={24}/>
           </div>
           <div id="foot-desc">{site.siteMetadata.description}</div>
           <div id="author-link">
