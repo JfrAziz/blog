@@ -10,14 +10,15 @@ const Header = ({showTitle = false}) => {
         <div id="logo-container">
           <Link to={"/"}>
             <Logo height={30}/>
+            {
+              showTitle && (
+                <div id="logo-text">
+                  Jafar Aziz
+                </div>
+              )
+            }
           </Link>
-          {
-            showTitle && (
-              <div id="logo-text">
-                Jafar Aziz
-              </div>
-            )
-          }
+          
         </div>
       </div>
     </header>

@@ -39,10 +39,10 @@
     font-weight: bold;
     font-size: 1.3rem;
     font-family: 'Raleway', sans-serif;
-    color: #3b3b3b;
+    color: var(--color);
   }
   .excerpt {
-    color: #666;
+    color: var(--color-secondary);
     font-size: 0.95rem;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 500;
@@ -57,13 +57,14 @@
       padding-right: 10px;
       letter-spacing: 0.05rem;
       font-weight: bold;
-      color: #5b5b5b;
+      color: var(--color-secondary);
       &:hover {
         text-decoration: underline;
+        color: var(--color);
       }
     }
     span {
-      color: #4b4b4b;
+      color: var(--color);
       padding-left: 10px;
       border-left: 1px solid #5b5b5b;
       font-family: "Nunito Sans", sans-serif;

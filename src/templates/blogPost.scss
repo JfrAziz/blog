@@ -1,12 +1,12 @@
 .blog-post {
-  h1 {
+  >h1 {
     padding: 0;
     margin: 0;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.05rem;
     font-size: 2.5rem;
-    color: #3b3b3b;
+    color: var(--color);
   }
   a:hover {
     text-decoration: underline;
@@ -17,11 +17,11 @@
       font-family: 'Lato', sans-serif;
       letter-spacing: 0.05rem;
       font-size: 0.9rem;
-      color: #3b3b3b;
+      color: var(--color);
       &.category {
         text-transform: uppercase;
         padding-right: 10px;
-        border-right: 1px solid #4b4b4b;
+        border-right: 1px solid #5b5b5b;
       }
       &.date {
         padding-left: 10px;

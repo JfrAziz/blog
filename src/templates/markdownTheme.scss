@@ -2,10 +2,45 @@
   font-family: 'Nunito Sans', sans-serif;
   line-height: 2rem;
   font-size: 1.1rem;
-  color: #3b3b3b;
+  color: var(--color);
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", sans-serif;
-    color: #2b2b2b;
+    font-family: "Lato", sans-serif;
+    color: var(--color-heading);
+    letter-spacing: 0.025rem;
+    margin: 20px 0;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+
+  table {
+    border-collapse: collapse;
+    tr, th, td {
+      border: 1px solid var(--color);
+      padding: 0 10px;
+    }
+    tr:nth-child(even) {
+      background-color: var(--bg-color);
+    }
+  }
+
+  a {
+    color: #527aa3;
   }
 
   blockquote {
@@ -13,12 +48,17 @@
     padding: 10px 20px;
     box-sizing: border-box;
     border-radius: 5px;
-    background-color: #edecf3;
+    background-color: #e2f1ff;
+    border-left: 5px solid #9fcaf3;
     p {
       margin: 0;
     }
     blockquote {
-      border-left-width: 5px;
+      border-left-width: 2px;
+    }
+    pre {
+      background-color: #ccecfa; 
+      border: none;
     }
   }
   pre {

@@ -1,12 +1,42 @@
 footer {
   background-color: #f4f4f4;
   border-top: 1px solid #ddd;
+  width: 100%;
   #footer-container {
     font-family: "Lato", sans-serif;
-    max-width: 960px;
+    max-width: 1200px;
     margin: auto;
-    padding: 20px 0;
-    color: #3b3b3b;
-    text-align: center;
+    padding: 10px 30px;
+    color: var(--color);
+    box-sizing: border-box;
+    a {
+      color: #527aa3;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    div {
+      padding: 7.5px 0;
+    }
+    #footer-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      #author-link {
+        a {
+          padding: 10px;
+          &:hover {
+            color: var(--color-secondary);
+          }
+        }
+      }
+      #foot-desc {
+        font-size: 0.9rem;
+      }
+      #author-name, #made-by {
+        color: var(--color-secondary  );
+        font-size: 0.8rem;
+      }
+    }
   }
 }
