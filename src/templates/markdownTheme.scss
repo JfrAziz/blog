@@ -8,6 +8,7 @@
     color: var(--color-heading);
     letter-spacing: 0.025rem;
     margin: 20px 0;
+    padding-top: 20px;
   }
   h1 {
     font-size: 2rem;
@@ -70,6 +71,7 @@
     display: flex;
     font-family: monospace;
     font-size: 0.9em;
+    line-height: 1.2rem;
     code {
       overflow-x: auto;
       width: 100%;
@@ -78,5 +80,8 @@
   }
   iframe {
     border: none;
+  }
+  img {
+    filter: drop-shadow(0 5px 5px #aaaaaa);
   }
 }
