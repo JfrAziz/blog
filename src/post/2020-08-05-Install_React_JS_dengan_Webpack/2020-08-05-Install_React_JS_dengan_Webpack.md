@@ -1,9 +1,9 @@
 ---
 slug: "menginstall-react-js-dengan-webpack"
-date: '2020-08-04'
-title: 'Menginstall react js dengan webpack'
+date: '2020-08-05'
+title: 'Menginstall React js Dengan webpack'
 category: "react js"
-excerpt: 'setup project react js dengan webpack'
+excerpt: 'Setup project react js dengan webpack'
 tumbnail: tumbnail.png
 ---
 
