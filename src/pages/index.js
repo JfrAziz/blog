@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/Layout_temp"
+import Layout from "../components/Layout"
 import PostItem from "../components/PostItem"
-import SEO from "../components/SEO_temp"
+import SEO from "../components/SEO"
 import "./index.scss"
 import "../templates/postList.scss"
 

@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "./Header_temp"
+import Header from "./Header"
 import "./layout.scss"
 import Footer from "./Footer"
 
