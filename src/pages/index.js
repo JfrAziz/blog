@@ -13,7 +13,7 @@ const Index = ({ data }) => {
       <SEO title="Home"/>
       <div id="blog-title">
         <h1>Jafar Aziz's Blog</h1>
-        <h3>An ordinary blogger, programmer, and self learner</h3>
+        <h3>My programming notes</h3>
       </div>
       <div id="all-post-container">
         {edges.map(edge => {

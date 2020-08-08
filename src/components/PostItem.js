@@ -5,7 +5,7 @@ import "./postItem.scss"
 
 const PostItem = ({ slug, title, excerpt, image, category, readTime }) => (
   <div className="post-item">
-    <Link to={`/post/${slug}`}>
+    <a className="post-wrapper" href={`/post/${slug}`}>
       <div className="post-tumbnail">
         <Img fluid={image} />
       </div>
@@ -19,7 +19,7 @@ const PostItem = ({ slug, title, excerpt, image, category, readTime }) => (
           <span>{readTime}</span>
         </div>
       </div>
-    </Link>
+    </a>
   </div>
 )
 

@@ -37,3 +37,9 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 480px) {  
+  footer #footer-container {
+    padding: 10px 20px;
+  }
+}
