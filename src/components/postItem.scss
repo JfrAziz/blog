@@ -7,13 +7,14 @@
   flex-direction: column;
 }
 
-.post-wrapper {
+.post-item>.post-wrapper {
+  flex: 1;
   display: flex;
   flex-direction: column;
   width: 100%;
   overflow: hidden;
   box-shadow: 2px 4px 30px #b2b4b933;
-  border-radius: 10px;
+  background-color: #fff;
   transition: all ease 300ms;
   &:hover {
     transform: translateY(-5px);
@@ -22,8 +23,7 @@
   }
 }
 
-.post-content {
-  background-color: #fff;
+.post-description {
   overflow: hidden;
   display: flex;
   flex: 1;

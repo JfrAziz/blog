@@ -8,12 +8,13 @@ import "../templates/postList.scss"
 
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark
+  const { siteMetadata } = data.site
   return (
     <Layout width="1200px">
       <SEO title="Home"/>
       <div id="blog-title">
         <h1>Jafar Aziz's Blog</h1>
-        <h3>My programming notes</h3>
+        <h3>{siteMetadata.description}</h3>
       </div>
       <div id="all-post-container">
         {edges.map(edge => {
@@ -40,7 +41,14 @@ const Index = ({ data }) => {
 
 const query = graphql`
   query HomePageQuery {
-    allMarkdownRemark {
+    site {
+      siteMetadata {
+        title
+        description
+        author
+      }
+    }
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
       totalCount
       edges {
         node {

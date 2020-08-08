@@ -6,11 +6,9 @@ import "./postItem.scss"
 const PostItem = ({ slug, title, excerpt, image, category, readTime }) => (
   <div className="post-item">
     <a className="post-wrapper" href={`/post/${slug}`}>
-      <div className="post-tumbnail">
-        <Img fluid={image} />
-      </div>
-      <div className="post-content">
-        <div className="post-top">
+      <Img fluid={image} />
+      <div className="post-description">
+        <div>
           <div className="title">{title}</div>
           <div className="excerpt">{excerpt}</div>
         </div>
