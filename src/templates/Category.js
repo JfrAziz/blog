@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from "../components/Layout"
+import Layout from "../components/Layout_temp"
 import PostItem from "../components/PostItem"
-import SEO from "../components/seo"
+import SEO from "../components/SEO_temp"
 import "./postList.scss"
 
 

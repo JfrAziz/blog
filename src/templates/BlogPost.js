@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import Layout from "../components/Layout"
+import Layout from "../components/Layout_temp"
 import Img from "gatsby-image"
 import "./blogPost.scss"
 import "./markdownTheme.scss"
-import SEO from "../components/seo"
+import SEO from "../components/SEO_temp"
 
 const BlogPost = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
