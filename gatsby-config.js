@@ -50,13 +50,13 @@ module.exports = {
       options: {
         height: 3,
         prependToBody: false,
-        color: `#ff6347`,
+        color: `#663399`,
       }
     },
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        color: `tomato`,
+        color: `#663399`,
         showSpinner: false,
       },
     },
