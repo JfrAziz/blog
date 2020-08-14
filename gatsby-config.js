@@ -45,5 +45,20 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        height: 3,
+        prependToBody: false,
+        color: `#ff6347`,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `tomato`,
+        showSpinner: false,
+      },
+    },
   ],
 }
