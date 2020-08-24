@@ -11,7 +11,7 @@ Untuk membuat project react js, kita biasanya menggunkanan `create-react-app`. K
 
 ### Initialisasi project
 
-```bash
+```
 mkdir react-webpack
 cd react-webpack
 npm init
@@ -25,12 +25,12 @@ Kemudian buat struktur folder seperti berikut:
 ### Menginstall dan mengkonfigurasi webpack dan babel
 
 Selanjutnya kita menginstall [webpack](https://webpack.js.org/) 
-```bash
+```
 npm i webpack webpack-cli --save-dev
 ```
 
 Kemudian saya akan menggunakan [babel](https://babeljs.io/) sebagai transcompiler nya
-```bash
+```
 npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
 ```
 
@@ -89,7 +89,7 @@ Kemudian buat sebuah file `index.html` di folder `public`. Lalu isi dengan code 
 
 Selanjutnya menginstall react js sebagai dependencies
 
-```bash
+```
 npm i react react-dom --save
 ```
 
@@ -178,7 +178,7 @@ Ketika server nya sudah hidup, kita bisa membuka project kita di [http://localho
 Satu lagi yang tidak kalah penting adalah `css`, `sass` atau `scss`, tergantung mana yang akan anda gunakan. Pada step-step sebelumnya, kita masih mendapatkan error ketika meng-import file `css`, `sass` atau `scss`. Untuk itu kita harus menginstall beberapa package terlebih dahulu
 
 Jika hanya mengguanakan `css` saja.
-```bash
+```
 npm i css-loader style-loader --save-dev
 ```
 Lalu tambahakan beberapa rules di file `webpack.config.js`

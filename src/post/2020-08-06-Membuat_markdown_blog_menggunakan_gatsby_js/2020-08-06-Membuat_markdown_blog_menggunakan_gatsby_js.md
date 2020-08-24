@@ -2,7 +2,7 @@
 slug: "Markdown-blog-menggunakan-gatsby-js"
 date: '2020-08-06'
 title: 'Markdown Blog Menggunakan Gatsby.js'
-category: "react js"
+category: "gatsby"
 excerpt: 'Membuat blog menggunakan markdown dengan gatsby js'
 tumbnail: tumbnail.png
 ---
