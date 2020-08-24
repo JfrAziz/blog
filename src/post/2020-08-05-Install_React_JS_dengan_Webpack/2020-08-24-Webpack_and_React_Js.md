@@ -3,7 +3,7 @@ slug: "How-To-Setup-Webpack-And-React-JS"
 date: '2020-08-24'
 title: 'How To Setup Webpack And React JS'
 category: "react js"
-excerpt: 'Setup a React JS Project with webpack manually, not using create-react-app.'
+excerpt: 'Setup a React JS Project with webpack manually, without create-react-app.'
 tumbnail: tumbnail.png
 ---
 
