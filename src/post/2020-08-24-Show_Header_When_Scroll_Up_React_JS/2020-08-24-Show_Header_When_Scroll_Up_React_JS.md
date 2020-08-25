@@ -89,4 +89,4 @@ main {
 }
 ```
 
-I make the header fixed position. To hide the header, i make the top property of header equal of -height, so the header completely hide from the screen. then when the header has visible class, we update the top property to 0. To make it better, add the animation to header. Next, we must import this style to our app. Now we can see the header will appear when we scroll up and hide when we scroll down. .
+I make the header fixed position. To hide the header, I make the top property of header equal of -height, so the header completely hide from the screen. Then when the header has visible class, we update the top property to 0. To make it better, add the animation to header. Next, we must import this style to our app. Now we can see the header will appear when we scroll up and hide when we scroll down.
