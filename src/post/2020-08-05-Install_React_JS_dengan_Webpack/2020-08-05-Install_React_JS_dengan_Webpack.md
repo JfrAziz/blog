@@ -43,7 +43,7 @@ Lalu buat file `.babelrc` di folder utama untuk mengkonfigurasi preset react pad
 
 Lalu buat juga konfigurasi webpack di file bernama `webpack.config.js`, lalu buat konfigurasi seperti ini.
 
-```js
+```javascript
 const path = require("path")
 
 module.exports = {
@@ -94,7 +94,8 @@ npm i react react-dom --save
 ```
 
 Sekarang buat file `index.js` di folder `src`, lalu buat component react sederhana seperti berikut.
-```
+
+```javascript
 import React from "react"
 import ReactDom from "react-dom"
 
@@ -134,7 +135,7 @@ npm i webpack-dev-server --save-dev
 ```
 
 Lalu tambahkan tambahkan beberapa baris di file `webpack.config.js` yang sebelumnya sudah kita buat.
-```js
+```javascript
 const path = require("path")
 
 module.exports = {
@@ -182,7 +183,7 @@ Jika hanya mengguanakan `css` saja.
 npm i css-loader style-loader --save-dev
 ```
 Lalu tambahakan beberapa rules di file `webpack.config.js`
-```js
+```javascript
 const path = require("path")
 
 module.exports = {
@@ -212,7 +213,8 @@ module.exports = {
 ```
 
 Misalkan kita akan meng-import sebuah file css di aplikasi kita. Buat sebuah file css kemudian kita bisa meng-import nya seperti berikut. Sebagai contoh menggunakan file `index.js` yang telah dibuat.
-```
+
+```javascript
 import React from "react"
 import ReactDom from "react-dom"
 import "./index.css
@@ -233,7 +235,7 @@ Lalu jika akan menggunakan `scss`, kita harus menginstall package tambahan lagi 
 npm i sass-loader node-sass --save-dev
 ```
 Lalu konfigurasi ulang file `webpack.config.js` dengan merubah rules sebagai berikut
-```js
+```javascript
 const path = require("path")
 
 module.exports = {

@@ -1,10 +1,13 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 import Layout from "../components/Layout"
 import Img from "gatsby-image"
 import "./blogPost.scss"
 import "./markdownTheme.scss"
 import SEO from "../components/SEO"
+
+deckDeckGoHighlightElement();
 
 const BlogPost = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark

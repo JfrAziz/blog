@@ -25,7 +25,7 @@ Gatsby.js berbasis [React.js](https://reactjs.org/), sehingga bagi anda yang sud
 
 Untuk menggunakan gatsby kita harus menginstall `gatsby-cli` secara global terlebih dahulu
 
-```bash
+```
 npm i -g gatsby-cli
 ```
 
@@ -33,7 +33,7 @@ npm i -g gatsby-cli
 
 Setelah menginstall `gatsby-cli`, untuk membuat sebuah project gatsby dapat dilakukan seperti berikut
 
-```bash
+```
 gatsby new my-blog
 cd my-blog
 ```
@@ -44,7 +44,7 @@ Setelah berhasil menginstall, maka struktur project default kita akan berbentuk 
 
 Untuk menjalankan project nya bisa dilakukan dengan 
 
-```bash
+```
 cd my-blog
 gatsby develop
 ```
@@ -64,13 +64,13 @@ Dalam membuat markdown blog ini, ada beberapa step yang diperlukan, yaitu:
 
 Untuk membaca file markdown yang akan kita buat nanti dibutuhkan plugin `gatsby-source-filesystem`. Bisa diinstall sebagai berikut.
 
-```bash
+```
 npm i gatsby-source-filesystem --save
 ```
 
 Lalu untuk merubah file markdown yang akan kita buat kedalam HTML dan frontmatter, kita membutuhkan plugin `gatsby-transformer-remark`.
 
-```bash
+```
 npm i gatsby-transformer-remark --save
 ```
 
@@ -171,7 +171,7 @@ export { pageQuery }
 
 Lalu buka file `gatsby-node.js` dan tambahkan konfigurasi seperti berkut ini untuk membuat halaman blog.
 
-```Javascript
+```javascript
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -214,7 +214,7 @@ Proses membuat halaman markdown sudah selesai, selanjutnya anda tinggal mengedit
 
 Satu lagi yang harus kita buat adalah membuat homepage atau index page yang memuat semua post yang kita buat. Sekarang buka file `index.js` di `src/pages/`. Dan edit file tersebut sekiranya seperti berikut. (ini hanya contoh)
 
-```Javascript
+```javascript
 import React from "react"
 import { graphql, Link } from "gatsby"
 

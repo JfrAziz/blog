@@ -10,6 +10,12 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              theme: 'one-light'
+            }
+          },
           `gatsby-remark-reading-time`,
           {
             resolve: `gatsby-remark-images`,

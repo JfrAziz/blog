@@ -62,7 +62,7 @@ Create babel configuration file `.babelrc` in your root project directory and ad
 
 And create webpack configuration file `webpack.config.js` too in your base directory and add following code
 
-```js
+```javascript
 const path = require("path")
 
 module.exports = {
@@ -121,7 +121,7 @@ npm i webpack-dev-server --save-dev
 ```
 
 After that update `webpack.config.js`, add devServer to it.
-```js
+```javascript
 const path = require("path")
 
 module.exports = {
@@ -173,7 +173,7 @@ If we just use `css` file instead of `scss` or `sass`. we can just install `css-
 npm i css-loader style-loader --save-dev
 ```
 and add some rules in `webpack.config.js`
-```js
+```javascript
 const path = require("path")
 
 module.exports = {
@@ -215,7 +215,7 @@ npm i sass-loader node-sass --save-dev
 ```
 
 After that add rule to `webpack.config.js` to load all `scss` and `sass` file
-```js
+```javascript
 const path = require("path")
 
 module.exports = {

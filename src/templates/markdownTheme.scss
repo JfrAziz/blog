@@ -29,6 +29,10 @@
     font-size: 1rem;
   }
 
+  p {
+    padding: 20px 0;
+  }
+
   table {
     border-collapse: collapse;
     tr, th, td {
@@ -57,26 +61,11 @@
     blockquote {
       border-left-width: 2px;
     }
-    pre {
-      background-color: #ccecfa; 
-      border: none;
-    }
   }
-  pre {
-    background-color: #f7f7f7;
-    border: 1px solid #d4d4d4;
+  code {
+    background-color: #f7c7e1;
     border-radius: 5px;
-    padding: 10px 20px;
-    overflow: hidden;
-    display: flex;
-    font-family: monospace;
-    font-size: 0.9em;
-    line-height: 1.2rem;
-    code {
-      overflow-x: auto;
-      width: 100%;
-      
-    }
+    padding: 0 5px;
   }
   iframe {
     border: none;

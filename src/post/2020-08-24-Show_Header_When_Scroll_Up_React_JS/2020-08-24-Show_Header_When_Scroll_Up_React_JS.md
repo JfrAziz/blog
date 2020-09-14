@@ -9,7 +9,7 @@ tumbnail: tumbnail.png
 
 I just learning how to make header in React JS appear when you scroll up the page and hide when you scroll down. I am using `pageYOffset` to get an scroll position of page. Then we make calculate previous and current `pageYOffset`. If previous `pageYOffset` greater than current `pageYoffset` its mean you are scrolling up the page and otherwise. Next we can update the state to make an className to header from that condition. Now lets take look to following code
 
-```js
+```javascript
 import React, { useState, useEffect } from 'react'
 
 const Header = () => {
@@ -51,10 +51,15 @@ const Header = () => {
       </header>
       <main>
         <p>
-          Ullamco sunt ut minim nostrud sunt consequat ex qui ex amet. Aliqua commodo minim enim esse. Officia laborum duis duis aute culpa dolor dolore dolor ipsum officia excepteur ad. Commodo dolore cillum esse incididunt amet Lorem. Quis elit tempor occaecat sit adipisicing ad est nostrud pariatur. Ipsum eiusmod qui dolor esse aute excepteur.
+          Ullamco sunt ut minim nostrud sunt consequat ex qui ex amet. Aliqua commodo minim enim esse. Officia laborum duis duis 
+          aute culpa dolor dolore dolor ipsum officia excepteur ad. Commodo dolore cillum esse incididunt amet Lorem. Quis elit 
+          tempor occaecat sit adipisicing ad est nostrud pariatur. Ipsum eiusmod qui dolor esse aute excepteur.
         </p>
         <p>
-          Minim velit sit esse sint reprehenderit reprehenderit nulla. Do tempor magna excepteur et veniam ad amet ut Lorem non voluptate ipsum irure Lorem. Enim consequat reprehenderit aute reprehenderit ea ullamco adipisicing aliquip cillum veniam ut proident officia. Minim deserunt commodo anim laborum enim eiusmod sint duis deserunt. Lorem nisi sit consequat irure labore eiusmod laboris tempor ex adipisicing est. Irure esse aliqua quis quis qui veniam cillum ex.
+          Minim velit sit esse sint reprehenderit reprehenderit nulla. Do tempor magna excepteur et veniam ad amet ut Lorem non 
+          voluptate ipsum irure Lorem. Enim consequat reprehenderit aute reprehenderit ea ullamco adipisicing aliquip cillum 
+          veniam ut proident officia. Minim deserunt commodo anim laborum enim eiusmod sint duis deserunt. Lorem nisi sit 
+          consequat irure labore eiusmod laboris tempor ex adipisicing est. Irure esse aliqua quis quis qui veniam cillum ex.
         </p>
       </main>
     </>
