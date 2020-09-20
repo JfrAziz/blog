@@ -4,7 +4,7 @@ date: '2020-09-15'
 title: 'Flask + React JS Part 4 : Controller untuk masing-masing Model'
 category: "Flask_React"
 excerpt: 'Membuat controller dari Model yang sudah dibuat yaitu Users dan Notes yang berisi beberapa proses CRUD untuk masing masing Model'
-tumbnail: tumbnail.png
+tumbnail: tumbnail4.png
 ---
 
 Pada part ini, kita akan membuat controller yang mengatur proses CRUD ke database, mulai dari daftar akun hingga menghapus data notes dari database. Sebelum membuat controller untuk `Users`, kita buat mekanisme hashing untuk password user terlebih dahulu. Kenapa hashing perlu? ya karena kita  harus mengamankan password agak jika hal hal yang tidak diinginkan terjadi, password tidak akan dengan mudah diketahui karena passwordnya sudah dienkripsi. Hashing adalah transformasi satu arah, jadi sulit untuk dilakukan deskripsi. Lalu bagaimana dengan pengecekan password kalo login? ya tingga di  cocokin antara hash password yang diiinput dan hash password yang didatabase. Sekarang, kita buat dulu mekanismenya. Sekarang buka Model Users di `Users.py` lalu tambahkan method berikut di dalam class `Users.`

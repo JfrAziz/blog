@@ -4,7 +4,7 @@ date: '2020-09-13'
 title: 'Flask + React JS Part 2 : Koneksi database, Model dan, migration'
 category: "Flask_React"
 excerpt: 'Membuat koneksi ke database menggunakan SQLAlchemy, membuat model sesuai dengan desain database yang dibuat, dan membuat migration ke database'
-tumbnail: tumbnail.png
+tumbnail: tumbnail2.png
 ---
 
 ### Membuat Model

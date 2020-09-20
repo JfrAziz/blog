@@ -4,7 +4,7 @@ date: '2020-09-17'
 title: 'Flask + React JS Part 6 : Authorization dan authentication dengan JWT'
 category: "Flask_React"
 excerpt: 'Memahami konsep JWT dan menggunakannya untuk Authorization dan Authentication di REST API yang sudah dibuat'
-tumbnail: tumbnail.png
+tumbnail: tumbnail6.png
 ---
 
 ### JSON Web Token

@@ -4,7 +4,7 @@ date: '2020-09-18'
 title: 'Flask + React JS Part 7 : Frontend dan routing halaman di frontend'
 category: "Flask_React"
 excerpt: 'Introduction sedikit tentang frontend kemudian menginstall React JS, membuat konfigurasi webpack dan babel, dan react-router-dom'
-tumbnail: tumbnail.png
+tumbnail: tumbnail7.png
 ---
 
 ### Penjelasan Singkat

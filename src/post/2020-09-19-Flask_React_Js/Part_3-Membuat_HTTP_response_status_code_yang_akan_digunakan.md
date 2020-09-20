@@ -4,7 +4,7 @@ date: '2020-09-14'
 title: 'Flask + React JS Part 3 : HTTP response status code'
 category: "Flask_React"
 excerpt: 'Menyiapkan standar HTTP response code yang akan digunakan oleh controller sebagai response dari rest api'
-tumbnail: tumbnail.png
+tumbnail: tumbnail3.png
 ---
 
 Dalam membuat REST API, HTTP response status code sangat diperlukan, agar API client dapat mudah mengetahui response yang diberikan dari servernya. HTTP response status code yang standard ada banyak, lengkapnya anda bisa baca [disini](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status). Secara singkatnya seperti ini, 

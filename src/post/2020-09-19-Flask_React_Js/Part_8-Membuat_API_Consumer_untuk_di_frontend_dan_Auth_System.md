@@ -4,7 +4,7 @@ date: '2020-09-19'
 title: 'Flask + React JS Part 8 : API Consumer untuk di frontend dan Auth System'
 category: "Flask_React"
 excerpt: 'Membuat api consumer untuk mengambil data dari REST API yang sudah dibuat dan membuat AuthContext untuk suth system nya'
-tumbnail: tumbnail.png
+tumbnail: tumbnail8.png
 ---
 
 ### ApiConsumer

@@ -4,7 +4,7 @@ date: '2020-09-11'
 title: 'Flask + React JS Part 0 : Project Requirements + Project Design'
 category: "Flask_React"
 excerpt: 'Introduction, menyiapkan tools, dan mendesain aplikasi yang akan dibuat sebelum memulai tutorial membuat aplikasi rest api dengan flask dan react js'
-tumbnail: tumbnail.png
+tumbnail: tumbnail0.png
 ---
 
 Beberapa waktu yang lalu saya mencoba untuk belajar membuat REST API dan menggunakannya di client side menggunakan Flask dan React JS. Saya coba membaca tutorial dari [@kiddyxyz](https://medium.com/@kiddy.xyz/tutorial-restful-api-dengan-flask-python-part-1-pengenalan-instalasi-4836478ce651) untuk artikel tentang Flask REST API, kemudian saya mencoba membuat frontedn menggunakan React JS, banyak hal yang saya dapat dari hal tersebut. Saya bisa lebih memahami bagaimana cara kerja REST API, jwt web token, HTTP header, HTTP response code, dan lain sebagainya. Pada kesempatan kali ini saya akan berbagi apa yang saya dapat dengan membuat sebuah aplikasi pembuatan catatan (*taking notes app*) sederhana yang mengimplementasikan REST API, dilengkapi dengan CRUD, authorization, dan authentication. Untuk tutorialnya akan saya bagi menjadi beberapa part agar lebih mudah dan tidak kepanjangan. List tutorialnya seperti ini:

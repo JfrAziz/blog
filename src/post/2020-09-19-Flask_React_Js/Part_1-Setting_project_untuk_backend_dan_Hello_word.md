@@ -4,7 +4,7 @@ date: '2020-09-12'
 title: 'Flask + React JS Part 1 : Setting project untuk backend dan Hello word di Flask'
 category: "Flask_React"
 excerpt: 'Menyiapkan tools, package, virtual environments, dan konfigurasi untuk flask (backend)'
-tumbnail: tumbnail.png
+tumbnail: tumbnail1.png
 ---
 
 ### Membuat virtual environments

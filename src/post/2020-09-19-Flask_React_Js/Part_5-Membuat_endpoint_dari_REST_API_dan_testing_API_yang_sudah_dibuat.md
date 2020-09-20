@@ -4,7 +4,7 @@ date: '2020-09-16'
 title: 'Flask + React JS Part 5 : Endpoint REST API dan testing API'
 category: "Flask_React"
 excerpt: 'Membuat endpoint di Flask untuk REST API dan menghubungkannya ke Controller yang sesuai dengan endpointnya'
-tumbnail: tumbnail.png
+tumbnail: tumbnail5.png
 ---
 
 ### Membuat endpoint

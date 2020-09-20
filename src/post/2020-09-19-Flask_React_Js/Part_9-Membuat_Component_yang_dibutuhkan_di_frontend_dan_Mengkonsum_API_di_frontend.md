@@ -4,7 +4,7 @@ date: '2020-09-20'
 title: 'Flask + React JS Part 9 : Membuat React Component dan Mengkonsum API di frontend'
 category: "Flask_React"
 excerpt: 'Membuat component-components menggunakan React JS dan menambah proses CRUD menggunakan ApiConsumer yang sudah dibuat'
-tumbnail: tumbnail.png
+tumbnail: tumbnail9.png
 ---
 
 Sekarang kita akan edit `Login.js`, `Signup.js`, dan `Notes.js` agar bisa mengambil data dari API. Untuk `Signup.js` saya buat form sederhana seperti berikut.
