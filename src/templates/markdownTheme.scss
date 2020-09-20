@@ -37,7 +37,13 @@
     border-collapse: collapse;
     tr, th, td {
       border: 1px solid var(--color);
-      padding: 0 10px;
+      padding: 10px 10px;
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+    }
+    th {
+      line-height: 1.2rem;
+      white-space: nowrap;
     }
     tr:nth-child(even) {
       background-color: var(--bg-color);
@@ -70,7 +76,14 @@
   iframe {
     border: none;
   }
-  img {
-    filter: drop-shadow(0 2px 3px #aaaaaa);
+}
+
+@media screen and (max-width: 400px) {
+  .blog-post-content {
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
   }
 }

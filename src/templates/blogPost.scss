@@ -4,7 +4,7 @@
     margin: 0;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0rem;
     font-size: 2.5rem;
     color: var(--color);
   }
@@ -37,5 +37,8 @@
 @media screen and (max-width: 750px) {
   .blog-post {
     padding: 20px;
+    >h1 {
+      font-size: 2rem;
+    }
   }
 }
