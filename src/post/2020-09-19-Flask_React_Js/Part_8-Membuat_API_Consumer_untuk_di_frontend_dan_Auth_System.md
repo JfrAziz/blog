@@ -41,7 +41,7 @@ const signup = (data) =>
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
-  })className="login-wrapper"
+  })
     .then(handleResponse)
     .then((json) => {
       const { access_token, refresh_token, users } = json.data;
